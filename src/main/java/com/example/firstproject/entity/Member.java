@@ -5,9 +5,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
 @Entity
 public class Member {
@@ -17,7 +19,7 @@ public class Member {
     private Long id;
 
     @Column
-    private String name;
+    private String email;
 
     @Column
     private String password;
